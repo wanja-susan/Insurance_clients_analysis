@@ -104,10 +104,78 @@ ORDER BY avg_claim_amt DESC;`
 
 ![A8](https://github.com/wanja-susan/Insurance_clients_analysis/assets/130906675/b5dfed75-df1d-4c91-be05-eebbbeb7e61d)
 
+## Question 9
+ •	How does education level correlate with household income?
 
+Retrieve the average household income for each education level from the "car_insurance.vcars" table. Group the data by education level calculate the average income, round it to three decimal places, and presents the results in descending order of average household income to provide insights into the relationship between education and income levels among the insurance clients.
 
+`SELECT education, ROUND(AVG(household_income),3) AS avg_household_income
+FROM car_insurance.vcars
+GROUP BY education
+ORDER BY avg_household_income DESC ;`
 
+![A9](https://github.com/wanja-susan/Insurance_clients_analysis/assets/130906675/f01df95a-4092-41eb-a12b-d0a66b44cb2a)
 
+## Question 10
+•	What is the average claim frequency for male and female customers?
+
+Retrieve the average claim frequency for each gender from the "car_insurance.vcars" table. Calculates the average claim frequency for male and female insurance clients, group the data accordingly, and present the results in descending order of average claim frequency to identify whether there's any difference in claim frequency between male and female customers.
+
+`SELECT gender, AVG(claim_freq) AS avg_claim_freq
+FROM car_insurance.vcars
+GROUP BY gender
+ORDER BY avg_claim_freq DESC;`
+
+![A10](https://github.com/wanja-susan/Insurance_clients_analysis/assets/130906675/e5eee591-2d30-426c-b4f2-80422d716566)
+
+## Question 11
+•	Is there a correlation between the car's manufacturing year and claim frequency?
+
+Get the average claim frequency for each car manufacturing year from the "car_insurance.vcars" table. Calculate the average claim frequency for different car years, group the data, and present the results in descending order of average claim frequency. The LIMIT 10 ensures that only the top 10 results are displayed, giving insight into the years with the highest claim frequencies.
+
+`SELECT car_year, AVG(claim_freq) AS avg_claim_freq
+FROM car_insurance.vcars
+GROUP BY car_year
+ORDER BY avg_claim_freq DESC
+LIMIT 10;`
+
+![A11](https://github.com/wanja-susan/Insurance_clients_analysis/assets/130906675/0f90dadd-d167-4149-8b42-fb493827d69e)
+
+## Question 12
+•	What is the average claim amount for cars manufactured before 2010?
+
+calculate the average claim amount for cars manufactured before the year 2010 from the "car_insurance.vcars" table. Filter the data to consider only older cars and calculate the average claim amount for these vehicles. The result gives insight into the average claim amount associated with cars manufactured before 2010.
+
+`SELECT ROUND(AVG(claim_amt),3) AS avg_claim_amt
+FROM car_insurance.vcars
+WHERE  car_year < 2010;`
+
+![A12](https://github.com/wanja-susan/Insurance_clients_analysis/assets/130906675/ded7cad9-df9e-4e37-a5e9-b6b6ac9116b5)
+
+## Question 13
+•	Which coverage zone has the highest claim frequency?
+
+Calculate the total claim frequency for each coverage zone from the "car_insurance.vcars" table. Calculate the total claim frequency for different coverage zones, group the data, and present the result for the coverage zone with the highest total claim frequency. LIMIT 1 ensures that only the top result is displayed, giving insight into the coverage zone with the highest claim frequency.
+
+`SELECT coverage_zone, SUM(claim_freq) AS total_claim_freq
+FROM car_insurance.vcars
+GROUP BY coverage_zone
+ORDER BY total_claim_freq DESC
+LIMIT 1;`
+
+![A13](https://github.com/wanja-susan/Insurance_clients_analysis/assets/130906675/b26a46ba-38c4-413d-a0d0-32d818637435)
+
+## Question 14
+•	Is there a relationship between coverage zone and average claim amount?
+
+ Retrieve the average claim amount for each coverage zone from the "car_insurance.vcars" table. Calculate the average claim amount for different coverage zones, group the data, and present the results in descending order of average claim amount to provide insights into the relationship between coverage zones and the average claim amounts associated with them.
+ 
+`SELECT coverage_zone, ROUND(AVG(claim_amt),3) AS avg_claim_amt
+FROM car_insurance.vcars
+GROUP BY coverage_zone
+ORDER BY avg_claim_amt DESC;`
+
+![A14](https://github.com/wanja-susan/Insurance_clients_analysis/assets/130906675/c0e27de8-7841-4379-8172-21d3602787a2)
 
 
 
