@@ -1,4 +1,15 @@
 ![Data-Analytics-in-Insurance-Cover-Image](https://github.com/wanja-susan/Insurance_clients_analysis/assets/130906675/aad32a42-db37-46d5-bc4c-c32c822c961d)
+## Table of Contents
+
+- [Introduction](#Introduction)
+- [Project Overview](#project-overview)
+- [Aim](#Aim)
+- [Data Sources](#data-sources)
+- [Analysis](#analysis)
+- [Visualizations](#visualizations)
+- [Conclusion](#Conclusion)
+- [Recommendations](#recommendations)
+
 
 # Insurance_clients_analysis
 Welcome to the Insurance Clients Data Analysis project on GitHub! This repository aims to provide insights into various aspects of insurance client behavior, demographics, and claim patterns through thorough data analysis. By exploring this repository, you'll gain valuable insights into the interactions between customer characteristics, claims, and insurance-related trends.
