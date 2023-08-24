@@ -5,7 +5,7 @@
 - [Project Overview](#project-overview)
 - [Aim](#Aim)
 - [DATASET](#DATASET)
-- [Wanja SQL.SQL](#Wanja SQL.SQL)
+- [Wanja sql.sql](#Wanja SQL.SQL)
 - [Power BI Visual](#Power BI Visual)
 - [Conclusion](#Conclusion)
 - [Recommendations](#recommendations)
