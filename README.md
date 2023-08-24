@@ -4,9 +4,9 @@
 - [Introduction](#Introduction)
 - [Project Overview](#project-overview)
 - [Aim](#Aim)
-- [Data Sources](#data-sources)
-- [Analysis](#analysis)
-- [Visualizations](#visualizations)
+- [DATASET](#DATASET)
+- [Wanja SQL.SQL](#Wanja SQL.SQL)
+- [Power BI Visual](#Power BI Visual)
 - [Conclusion](#Conclusion)
 - [Recommendations](#recommendations)
 
